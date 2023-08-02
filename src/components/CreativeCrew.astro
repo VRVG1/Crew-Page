@@ -1,0 +1,72 @@
+---
+import Person from "./Person.astro"
+---
+
+<div class="flex flex-col py-16 px-4">
+    <div class="flex flex-col md:flex-row md:justify-around md:md:pb-[5rem]">
+        <h1
+            class="text-black font-PT_Serif text-4xl font-bold leading-normal tracking-[-0.10125rem] mb-[2.38rem]"
+        >
+            The creative crew
+        </h1>
+        <div class="md:w-[25%]">
+            <h2
+                class="text-black font-Poppins text-[1.125rem] font-semibold leading-normal uppercase mb-[0.63rem]"
+            >
+                Who we are
+            </h2>
+            <p
+                class="text-black font-Poppins text-[0.875rem] font-normal leading-normal md:text-[1.125rem] md:w-[80%]"
+            >
+                We are team of creatively diverse. driven. innovative
+                individuals working in various locations from the world.
+            </p>
+        </div>
+    </div>
+    <div
+        class="grid grid-rows-3 grid-flow-col justify-around gap-x-4 pt-8 md:grid-rows-2 md:gap-x-0 md:justify-evenly"
+    >
+        <Person
+            title="Product Owner"
+            name="Bill Mahoney"
+            img="../../public/photo1.png"
+            margin=""
+            mdMargin=""
+        />
+        <Person
+            title="Art Director"
+            name="Saba Cabrera"
+            img="../../public/photo2.png"
+            margin=""
+            mdMargin=""
+        />
+        <Person
+            title="Tech Lead"
+            name="Shae Le"
+            img="../../public/photo3.png"
+            margin=""
+            mdMargin="mdSeparacion"
+        />
+        <Person
+            title="UX Designer"
+            name="Skylah Lu"
+            img="../../public/photo4.png"
+            margin="separacion"
+            mdMargin="mdSeparacion"
+        />
+        <Person
+            title="Developer"
+            name="Griff Richards"
+            img="../../public/photo5.png"
+            margin="separacion"
+            mdMargin=""
+        />
+        <Person
+            title="Developer"
+            name="Stan john"
+            img="../../public/photo6.png"
+            margin="separacion"
+            mdMargin=""
+        />
+    </div>
+</div>

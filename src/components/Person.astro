@@ -1,0 +1,46 @@
+---
+interface Props {
+    title: string
+    name: string
+    img: string
+    margin: string
+    mdMargin: string
+}
+
+const { title, name, img, margin, mdMargin } = Astro.props
+---
+
+<div class={margin + " " + mdMargin}>
+    <div class="relative">
+        <img
+            class="w-[140px] h-[200px] md:w-[180px] md:h-[260px] xl:w-[70%] xl:h-auto"
+            src={img}
+            alt={name}
+        />
+        <span
+            class="text-black font-PT_Serif text-[0.625rem] font-normal leading-normal uppercase rotate-90 absolute top-[4.5rem] left-[4.4rem] w-[10rem] md:text-[0.8rem] md:top-[6.8rem] md:left-[5rem] md:w-[15rem] xl:text-[1.3rem] xl:top-[6.7rem] xl:left-[14.3rem] xl:w-[15rem]"
+        >
+            {title}
+        </span>
+    </div>
+    <p
+        class="text-black font-Poppins text-[0.875rem] font-semibold leading-normal md:text-md xl:text-xl"
+    >
+        {name}
+    </p>
+</div>
+<style>
+    .separacion {
+        margin-top: 2rem;
+    }
+
+    @media (min-height: 950px) {
+        .separacion {
+            margin-top: 0rem;
+        }
+
+        .mdSeparacion {
+            margin-top: 6rem;
+        }
+    }
+</style>
